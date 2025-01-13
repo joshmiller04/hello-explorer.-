@@ -1,4 +1,69 @@
-/* Add screen styles below */
-a.active {
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* Light gray background for a clean look */
+    color: #333; /* Dark text for readability */
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Heading Style */
+h1 {
+    font-size: 2.5em;
+    color: #4b4b4b; /* Dark gray for the title */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Paragraph Styles */
+p {
+    font-size: 1.2em;
+    color: #555; /* Lighter gray for text */
+    text-align: justify; /* Justify text for better readability */
+    margin-bottom: 20px;
+    line-height: 1.8;
+}
+
+/* Image Styles */
+img {
+    max-width: 100%; /* Make sure images are responsive */
+    height: auto;
+    margin: 10px 0; /* Add some space around images */
+}
+
+/* Navigation Styles */
+nav {
+    text-align: center;
+    margin-top: 30px;
+}
+
+nav ul {
+    list-style: none; /* Remove bullet points */
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 1.2em;
+    color: #1e90ff; /* Blue links */
+}
+
+nav a:hover {
+    color: #ff6347; /* Change to tomato red on hover */
+}
+
+nav a.active {
     font-weight: bold;
+    text-decoration: underline; /* Highlight active link */
 }
