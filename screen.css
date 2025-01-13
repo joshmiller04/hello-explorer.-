@@ -1,69 +1,60 @@
-/* General Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Body Styles */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0; /* Light gray background for a clean look */
-    color: #333; /* Dark text for readability */
+    background-color: #e77373;
+    color: #070707;
     line-height: 1.6;
     padding: 20px;
 }
 
-/* Heading Style */
 h1 {
     font-size: 2.5em;
-    color: #4b4b4b; /* Dark gray for the title */
+    color: #070707;
     text-align: center;
     margin-bottom: 20px;
 }
 
-/* Paragraph Styles */
 p {
     font-size: 1.2em;
-    color: #555; /* Lighter gray for text */
-    text-align: justify; /* Justify text for better readability */
+    color: #070707;
+    text-align: justify;
     margin-bottom: 20px;
     line-height: 1.8;
 }
 
-/* Image Styles */
 img {
-    max-width: 100%; /* Make sure images are responsive */
-    height: auto;
-    margin: 10px 0; /* Add some space around images */
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    margin: 10px;
+    cursor: pointer; 
+    transition: transform 0.3s ease-in-out; 
 }
 
-/* Navigation Styles */
+
+img:hover {
+    transform: scale(1.1); 
+}
+
+p {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+}
+
 nav {
-    text-align: center;
-    margin-top: 30px;
+    display: none; 
 }
 
-nav ul {
-    list-style: none; /* Remove bullet points */
+.nav-button {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
 }
 
-nav li {
-    display: inline-block;
-    margin-right: 20px;
-}
-
-nav a {
-    text-decoration: none;
-    font-size: 1.2em;
-    color: #1e90ff; /* Blue links */
-}
-
-nav a:hover {
-    color: #ff6347; /* Change to tomato red on hover */
-}
-
-nav a.active {
-    font-weight: bold;
-    text-decoration: underline; /* Highlight active link */
-}
